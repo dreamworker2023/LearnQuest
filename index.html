@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventure Library</title>
+  <link rel="stylesheet" href="css\style_gameEngine.css">
+  <!-- Il foglio di stile del tema verrà caricato dinamicamente -->
+  <link id="theme-stylesheet" rel="stylesheet" href="">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h2 id="titleChange">Adventure Library</h2>
+    <div class="search-container">
+      <input type="text" id="search" placeholder="Cerca avventura..." oninput="filterLibrary()">
+      <img src="img\search.png" alt="cerca">
+    </div>
+  </header>
+
+  <!-- Libreria (video teca) -->
+  <div id="library">
+    <!-- Le copertine verranno generate dinamicamente leggendo "avventure/list.json" -->
+  </div>
+
+  <!-- Container del gioco -->
+  <div id="game-container">
+    <h1 id="game-title">Title</h1>
+    <img id="scene-image" src="img/pagina1.jpg" alt="Scene Image">
+    <p id="story-text">Story text goes here</p>
+    <div id="choices">
+      <!-- Le scelte verranno generate dinamicamente -->
+    </div>
+    <div id="puzzle" class="hidden">
+      <p id="puzzle-text"></p>
+      <input type="text" id="answer" placeholder="Scrivi la risposta">
+      <button class="submit-answer" onclick="checkAnswer()">Invia Risposta</button>
+    </div>
+  </div>
+
+  <!-- Overlay per errori -->
+  <div id="error-overlay">
+    <div id="error-message">Risposta errata! Riprova.</div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    Paolo Sanna © 2025 - CFP ELIS laboratorio
+  </footer>
+
+  <script>
+    function filterLibrary() {
+      let input = document.getElementById("search").value.toLowerCase();
+      let covers = document.querySelectorAll(".cover");
+      covers.forEach(cover => {
+        let title = cover.innerText.toLowerCase();
+        cover.style.display = title.includes(input) ? "block" : "none";
+      });
+    }
+
+    function loadLibrary() {
+      fetch("avventure/list.json")
+        .then(response => response.json())
+        .then(data => populateLibrary(data))
+        .catch(error => {
+          console.error("Errore nel caricamento delle avventure:", error);
+          document.getElementById("library").innerHTML = "<p>Impossibile caricare le avventure.</p>";
+        });
+    }
+
+    function populateLibrary(adventures) {
+      const libraryDiv = document.getElementById("library");
+      
+      adventures.forEach(adventure => {
+        let coverDiv = document.createElement("div");
+        coverDiv.className = "cover";
+        coverDiv.innerHTML = `<img src="${adventure.copertina}" alt="${adventure.title}"><br><span>${adventure.title}</span>`;
+        coverDiv.onclick = () => loadAdventureFromFile("avventure/" + adventure.file);
+        libraryDiv.appendChild(coverDiv);
+      });
+    }
+
+    let adventure = null;
+    let currentScene = 0;
+    let correctAnswer = "";
+
+    function loadAdventureFromFile(filePath) {
+      fetch(filePath)
+        .then(response => response.json())
+        .then(data => startAdventure(data))
+        .catch(error => alert("Errore nel caricamento dell'avventura: " + error.message));
+    }
+
+    function loadThemeCSS(theme) {
+      const existingLink = document.getElementById("theme-stylesheet");
+      let href = "";
+      if (theme === "green") {
+        href = "css/green.css";
+      } else if (theme === "white") {
+        href = "css/white.css";
+      } else if (theme === "blue") {
+        href = "css/blue.css";
+      } else if (theme === "ocra") {
+        href = "css/ocra.css";
+      }
+      existingLink.href = href;
+    }
+
+    function startAdventure(data) {
+      adventure = data;
+      loadThemeCSS(adventure.theme);
+      if (adventure.bgImage && adventure.bgImage.trim() !== "") {
+        document.body.style.backgroundImage = 'url("' + adventure.bgImage + '")';
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundPosition = "center";
+        document.body.style.backgroundBlendMode = "overlay";
+        document.body.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+      }
+      document.getElementById("game-title").innerText = adventure.title;
+      document.getElementById("library").style.display = "none";
+      document.getElementById("titleChange").innerText="Adventure"
+      document.querySelector(".search-container").style.display = "none";
+      document.getElementById("game-container").style.display = "block";
+      nextScene(1);
+    }
+
+    function nextScene(sceneId) {
+      currentScene = sceneId;
+      const scene = adventure.scenes.find(s => s.id === sceneId);
+      if (!scene) {
+        document.getElementById("story-text").innerHTML = "Avventura completata.";
+        document.getElementById("choices").innerHTML = "";
+        return;
+      }
+      document.getElementById("story-text").innerHTML = scene.story;
+      if (scene.image && scene.image.trim() !== "") {
+        document.getElementById("scene-image").src = scene.image;
+      } else {
+        document.getElementById("scene-image").src = "";
+      }
+      if (scene.puzzleEnabled) {
+        correctAnswer = scene.correctAnswer;
+        document.getElementById("puzzle-text").innerHTML = scene.puzzleText;
+        document.getElementById("puzzle").classList.remove("hidden");
+        document.getElementById("choices").classList.add("hidden");
+      } else {
+        document.getElementById("puzzle").classList.add("hidden");
+        let choicesHTML = "";
+        scene.choices.forEach(choice => {
+          choicesHTML += `<button class="choice" onclick="nextScene(${choice.dest})">${choice.text}</button>`;
+        });
+        document.getElementById("choices").innerHTML = choicesHTML;
+        document.getElementById("choices").classList.remove("hidden");
+      }
+    }
+
+    function showErrorOverlay() {
+      const overlay = document.getElementById("error-overlay");
+      overlay.style.display = "flex";
+      setTimeout(() => {
+        overlay.style.display = "none";
+      }, 3000);
+    }
+
+    function checkAnswer() {
+      const userAnswer = document.getElementById("answer").value;
+      if (userAnswer === correctAnswer) {
+        const scene = adventure.scenes.find(s => s.id === currentScene);
+        let choicesHTML = "";
+        scene.choices.forEach(choice => {
+          choicesHTML += `<button class="choice" onclick="nextScene(${choice.dest})">${choice.text}</button>`;
+        });
+        document.getElementById("choices").innerHTML = choicesHTML;
+        document.getElementById("puzzle").classList.add("hidden");
+        document.getElementById("choices").classList.remove("hidden");
+        document.getElementById("answer").value = "";
+      } else {
+        showErrorOverlay();
+      }
+    }
+
+    loadLibrary();
+  </script>
+
+</body>
+</html>

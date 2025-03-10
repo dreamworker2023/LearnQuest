@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventure Editor</title>
+  <link rel="stylesheet" href="css/style_editor.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Adventure Editor</h1>
+
+    <!-- Impostazioni generali -->
+    <div class="section" id="general-settings">
+      <h2>General Settings</h2>
+      <p>
+        <label>Adventure Title:</label><br>
+        <input type="text" id="adventure-title" placeholder="Enter adventure title">
+      </p>
+      <p>
+        <label>Theme:</label><br>
+        <input type="radio" name="theme" value="green" checked> Green&nbsp;
+        <input type="radio" name="theme" value="white"> White&nbsp;
+        <input type="radio" name="theme" value="ocra"> Ocra&nbsp;
+        <input type="radio" name="theme" value="blue"> Blue
+      </p>
+      <p>
+        <label>Background Image URL:</label><br>
+        <input type="text" id="bg-image" placeholder="Enter background image URL (default: img/bg.jpg)">
+      </p>
+      <p>
+        <label>Load Adventure:</label>
+        <input type="file" id="load-json" accept=".json">
+      </p>
+    </div>
+
+    <!-- Editor delle scene -->
+    <div class="section" id="scenes-editor">
+      <h2>Scenes Editor</h2>
+      <div id="scenes-container"></div>
+      <button onclick="addScene()">Add Scene</button>
+    </div>
+
+    <!-- Output JSON -->
+    <div class="section">
+      <h2>Adventure JSON Output</h2>
+      <button onclick="generateJSON()">Generate JSON</button>
+      <button onclick="saveJSON()">Save JSON</button>
+      <textarea id="output" style="width:100%; height:300px;" placeholder="The generated JSON will appear here..."></textarea>
+    </div>
+  </div>
+
+  <script>
+    let sceneCount = 0;
+    function escapeHTML(str) {
+      return str.replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#39;");
+    }
+    function addScene(id = null, story = '', image = '', puzzleEnabled = false, puzzleText = '', correctAnswer = '', choices = []) {
+      sceneCount++;
+      const sceneDiv = document.createElement("div");
+      sceneDiv.className = "scene";
+      sceneDiv.id = "scene-" + sceneCount;
+      sceneDiv.innerHTML = 
+        `<h3>Scene ${sceneCount}</h3>
+        <label>Story Text:</label><br>
+        <textarea class='story-text' style='height:50px;'>${escapeHTML(story)}</textarea><br>
+        <label>Image URL:</label><br>
+        <input type='text' class='scene-image' value='${escapeHTML(image)}'><br>
+        <label>Puzzle Enabled:</label> 
+        <input type='checkbox' class='puzzle-enabled' ${puzzleEnabled ? 'checked' : ''} onchange='togglePuzzle(this)'><br>
+        <div class='puzzle-fields ${puzzleEnabled ? '' : 'hidden'}'>
+          <label>Puzzle Text:</label><br>
+          <textarea class='puzzle-text' style='height:40px;'>${escapeHTML(puzzleText)}</textarea><br>
+          <label>Correct Answer:</label>
+          <input type='text' class='correct-answer' value='${escapeHTML(correctAnswer)}'><br>
+        </div>
+        <div class='choices-container'>
+          <h4>Choices:</h4>
+          <div class='choice-list'></div>
+          <button onclick='addChoice(${sceneCount})' type='button'>Add Choice</button>
+        </div>`;
+      document.getElementById("scenes-container").appendChild(sceneDiv);
+      choices.forEach(choice => addChoice(sceneCount, choice.text, choice.dest));
+    }
+
+    function addChoice(sceneId, text = '', dest = 1) {
+      const sceneDiv = document.getElementById("scene-" + sceneId);
+      const choiceList = sceneDiv.querySelector(".choice-list");
+      const choiceDiv = document.createElement("div");
+      choiceDiv.className = "choice";
+      choiceDiv.innerHTML = 
+        `<label>Choice Text:</label>
+        <input type='text' class='choice-text' value='${escapeHTML(text)}'>
+        <label>Destination Scene ID:</label>
+        <input type='number' class='dest-scene' min='1' value='${dest}'>
+        <button onclick='removeChoice(this)' type='button'>Remove</button>`;
+      choiceList.appendChild(choiceDiv);
+    }
+
+    function removeChoice(button) {
+      button.parentElement.remove();
+    }
+
+    function generateJSON() {
+      const title = document.getElementById("adventure-title").value || "Untitled Adventure";
+      const theme = document.querySelector("input[name='theme']:checked").value;
+      const bgImage = document.getElementById("bg-image").value || "img/bg.jpg";
+      const scenes = [];
+      for (let i = 1; i <= sceneCount; i++) {
+        const sceneDiv = document.getElementById("scene-" + i);
+        const storyText = sceneDiv.querySelector(".story-text").value;
+        const imageUrl = sceneDiv.querySelector(".scene-image").value;
+        const puzzleEnabled = sceneDiv.querySelector(".puzzle-enabled").checked;
+        let puzzleText = "", correctAnswer = "";
+        if (puzzleEnabled) {
+          puzzleText = sceneDiv.querySelector(".puzzle-text").value;
+          correctAnswer = sceneDiv.querySelector(".correct-answer").value;
+        }
+        const choices = Array.from(sceneDiv.querySelectorAll(".choice")).map(choiceDiv => ({
+          text: choiceDiv.querySelector(".choice-text").value,
+          dest: Number(choiceDiv.querySelector(".dest-scene").value)
+        }));
+        scenes.push({ id: i, story: storyText, image: imageUrl, puzzleEnabled, puzzleText, correctAnswer, choices });
+      }
+      document.getElementById("output").value = JSON.stringify({ title, theme, bgImage, scenes }, null, 2);
+    }
+
+    function saveJSON() {
+      generateJSON();
+      const title = document.getElementById("adventure-title").value || "avventura";
+      const blob = new Blob([document.getElementById("output").value], { type: "application/json" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = `${title}.json`;
+      link.click();
+    }
+
+    document.getElementById("load-json").addEventListener("change", function(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const data = JSON.parse(e.target.result);
+          document.getElementById("adventure-title").value = data.title;
+          document.getElementById("bg-image").value = data.bgImage;
+          document.querySelector(`input[name='theme'][value='${data.theme}']`).checked = true;
+          data.scenes.forEach(scene => addScene(scene.id, scene.story, scene.image, scene.puzzleEnabled, scene.puzzleText, scene.correctAnswer, scene.choices));
+        };
+        reader.readAsText(file);
+      }
+    });
+  </script>
+</body>
+</html>
