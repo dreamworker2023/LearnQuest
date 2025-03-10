@@ -27,7 +27,7 @@ Questo progetto permette di creare e giocare a storie interattive personalizzate
 1. Vai su **Settings** del repository.
 2. Scorri fino a **GitHub Pages**.
 3. Seleziona `main` come branch di pubblicazione.
-4. Il gioco sarà disponibile su `https://tuo-username.github.io/tuo-repository/`.
+4. Il gioco sarà disponibile su `https://dreamworker2023.github.io/LearnQuest/`.
 
 ---
 
@@ -60,5 +60,5 @@ This project allows you to create and play custom interactive stories. Students 
 1. Go to **Settings** in the repository.
 2. Scroll down to **GitHub Pages**.
 3. Select `main` as the publishing branch.
-4. The game will be available at `https://your-username.github.io/your-repository/`.
+4. The game will be available at `https://dreamworker2023.github.io/LearnQuest/`.
 
