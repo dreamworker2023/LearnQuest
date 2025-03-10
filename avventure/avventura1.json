@@ -1,0 +1,253 @@
+{
+  "title": "Ω TEAM",
+  "theme": "green",
+  "bgImage": "img/bg_Omega.jpg",
+  "scenes": [
+    {
+      "id": 1,
+      "story": "Scene 1: La recinzione è elettrificata a 400V. Devi calcolare la corrente con una resistenza totale di 10Ω.",
+      "image": "img/recinzione.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Calcola la corrente: V = 400V, R = 10Ω. Quanto vale I?",
+      "correctAnswer": "40",
+      "choices": [
+        { "text": "Avanza nel cortile", "dest": 3 },
+        { "text": "Raccogli strumenti dal veicolo", "dest": 4 }
+      ]
+    },
+    {
+      "id": 2,
+      "story": "Scene 2: Trovi un ingresso laterale vicino a un veicolo abbandonato. Un semplice circuito ti sfida: V = 9V, R = 3Ω.",
+      "image": "img/veicolo.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Calcola la corrente: V = 9V, R = 3Ω. Quanto vale I?",
+      "correctAnswer": "3",
+      "choices": [
+        { "text": "Esamina il veicolo", "dest": 5 },
+        { "text": "Procedi verso l'edificio", "dest": 6 }
+      ]
+    },
+    {
+      "id": 3,
+      "story": "Scene 3: Nel cortile, trovi un pannello di sicurezza bloccato. Per sbloccarlo, calcola la corrente con V = 24V e R = 8Ω.",
+      "image": "img/cortile.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Calcola la corrente: V = 24V, R = 8Ω. Quanto vale I?",
+      "correctAnswer": "3",
+      "choices": [
+        { "text": "Usa il pannello per sbloccare la porta", "dest": 7 },
+        { "text": "Esplora il cortile per vie alternative", "dest": 8 }
+      ]
+    },
+    {
+      "id": 4,
+      "story": "Scene 4: Hai raccolto strumenti utili dal veicolo. Un dispositivo da attivare richiede di calcolare la potenza: V = 12V e I = 2A.",
+      "image": "img/strumenti.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Calcola la potenza: P = 12V * 2A. Quanto vale P in watt?",
+      "correctAnswer": "24",
+      "choices": [
+        { "text": "Attiva il dispositivo per bypassare la sicurezza", "dest": 9 },
+        { "text": "Segui un percorso alternativo via condotto", "dest": 10 }
+      ]
+    },
+    {
+      "id": 5,
+      "story": "Scene 5: Esaminando il veicolo trovi componenti elettronici. Un circuito base ti chiede: V = 9V, R = 3Ω.",
+      "image": "img/veicolo_interno.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Calcola la corrente: V = 9V, R = 3Ω. Quanto vale I?",
+      "correctAnswer": "3",
+      "choices": [
+        { "text": "Costruisci un dispositivo d'accesso", "dest": 11 },
+        { "text": "Lascia il veicolo e procedi furtivamente", "dest": 12 }
+      ]
+    },
+    {
+      "id": 6,
+      "story": "Scene 6: All'ingresso laterale un sensore blocca il passaggio. Calcola la corrente se V = 15V e R = 5Ω.",
+      "image": "img/sensore.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Calcola la corrente: V = 15V, R = 5Ω. Quanto vale I?",
+      "correctAnswer": "3",
+      "choices": [
+        { "text": "Disattiva il sensore", "dest": 13 },
+        { "text": "Fingi di essere un tecnico e bypassa il sensore", "dest": 14 }
+      ]
+    },
+    {
+      "id": 7,
+      "story": "Scene 7: La porta del lobby è bloccata da un circuito. Sapendo che due resistori da 15Ω e 10Ω sono in serie, la resistenza totale deve essere 40Ω. Qual è il valore mancante?",
+      "image": "img/lobby.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Calcola: 15Ω + 10Ω + R = 40Ω. Quanto vale R?",
+      "correctAnswer": "15",
+      "choices": [
+        { "text": "Inserisci il codice e procedi", "dest": 15 },
+        { "text": "Cerca un'altra via d'accesso", "dest": 16 }
+      ]
+    },
+    {
+      "id": 8,
+      "story": "Scene 8: Esplorando il cortile scopri un pannello nascosto. Per sbloccarlo, calcola la potenza con V = 18V e I = 2A.",
+      "image": "img/pannello.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Calcola la potenza: P = 18V * 2A. Quanto vale P in watt?",
+      "correctAnswer": "36",
+      "choices": [
+        { "text": "Apri il pannello", "dest": 17 },
+        { "text": "Ritorna verso l'ingresso principale", "dest": 18 }
+      ]
+    },
+    {
+      "id": 9,
+      "story": "Scene 9: Utilizzando gli strumenti bypassi la sicurezza e raggiungi un corridoio oscuro. Calcola la corrente: V = 36V, R = 12Ω.",
+      "image": "img/corridoio.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Calcola la corrente: V = 36V, R = 12Ω. Quanto vale I?",
+      "correctAnswer": "3",
+      "choices": [
+        { "text": "Procedi nel corridoio", "dest": 19 },
+        { "text": "Riconsidera la strategia", "dest": 16 }
+      ]
+    },
+    {
+      "id": 10,
+      "story": "Scene 10: Segui un percorso alternativo attraverso un condotto di ventilazione. Calcola la resistenza se V = 48V e I = 4A.",
+      "image": "img/condotto.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Calcola la resistenza: R = 48V / 4A. Quanto vale R in ohm?",
+      "correctAnswer": "12",
+      "choices": [
+        { "text": "Accedi al pannello del condotto", "dest": 19 },
+        { "text": "Ritorna all'ingresso con nuove informazioni", "dest": 15 }
+      ]
+    },
+    {
+      "id": 11,
+      "story": "Scene 11: Utilizzando i componenti del veicolo, costruisci un dispositivo d'accesso. Calcola la potenza necessaria con V = 20V e I = 5A.",
+      "image": "img/dispositivo.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Calcola la potenza: P = 20V * 5A. Quanto vale P in watt?",
+      "correctAnswer": "100",
+      "choices": [
+        { "text": "Usa il dispositivo per aprire la porta", "dest": 16 },
+        { "text": "Conserva il dispositivo e procedi furtivamente", "dest": 12 }
+      ]
+    },
+    {
+      "id": 12,
+      "story": "Scene 12: Procedi furtivamente lungo un corridoio buio e incontri una trappola elettrica. Calcola la corrente: V = 30V, R = 10Ω.",
+      "image": "img/trappola.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Calcola la corrente: V = 30V, R = 10Ω. Quanto vale I?",
+      "correctAnswer": "3",
+      "choices": [
+        { "text": "Supera la trappola e prosegui", "dest": 13 },
+        { "text": "Torna indietro e cerca un percorso alternativo", "dest": 17 }
+      ]
+    },
+    {
+      "id": 13,
+      "story": "Scene 13: Hai disattivato il sensore e ti trovi in una stanza con un computer centrale. Calcola la potenza se V = 5V e I = 1A.",
+      "image": "img/computer.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Calcola la potenza: P = 5V * 1A. Quanto vale P in watt?",
+      "correctAnswer": "5",
+      "choices": [
+        { "text": "Accedi al computer e scarica i dati", "dest": 18 },
+        { "text": "Esplora la stanza per ulteriori indizi", "dest": 14 }
+      ]
+    },
+    {
+      "id": 14,
+      "story": "Scene 14: Fingendo di essere un tecnico, bypassi il sistema. Calcola la corrente: V = 12V, R = 4Ω.",
+      "image": "img/tecnico.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Calcola la corrente: V = 12V, R = 4Ω. Quanto vale I?",
+      "correctAnswer": "3",
+      "choices": [
+        { "text": "Procedi nel corridoio adiacente", "dest": 19 },
+        { "text": "Ritorna all'ingresso e prova una via diversa", "dest": 20 }
+      ]
+    },
+    {
+      "id": 15,
+      "story": "Scene 15: Inserisci il codice nel pannello della porta principale. Calcola la resistenza totale di un circuito in serie formato da due resistori da 20Ω e 10Ω.",
+      "image": "img/codice.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Calcola: 20Ω + 10Ω = ?",
+      "correctAnswer": "30",
+      "choices": [
+        { "text": "Apri la porta e prosegui", "dest": 17 },
+        { "text": "Controlla nuovamente il circuito", "dest": 16 }
+      ]
+    },
+    {
+      "id": 16,
+      "story": "Scene 16: Scopri un pannello segreto. Calcola la corrente se V = 50V e R = 10Ω.",
+      "image": "img/segreto.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Calcola la corrente: V = 50V, R = 10Ω. Quanto vale I?",
+      "correctAnswer": "5",
+      "choices": [
+        { "text": "Apri la porta segreta", "dest": 18 },
+        { "text": "Prosegui lungo il corridoio principale", "dest": 19 }
+      ]
+    },
+    {
+      "id": 17,
+      "story": "Scene 17: Accedi al pannello di controllo del sistema di sicurezza. Calcola la potenza se V = 30V e I = 4A.",
+      "image": "img/controllo.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Calcola la potenza: P = 30V * 4A. Quanto vale P in watt?",
+      "correctAnswer": "120",
+      "choices": [
+        { "text": "Disattiva il sistema e apri la via", "dest": 20 },
+        { "text": "Ignora il pannello e cerca un percorso alternativo", "dest": 16 }
+      ]
+    },
+    {
+      "id": 18,
+      "story": "Scene 18: Accedi al computer per scaricare i dati vitali. Calcola la corrente: V = 60V, R = 20Ω.",
+      "image": "img/dati.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Calcola la corrente: V = 60V, R = 20Ω. Quanto vale I?",
+      "correctAnswer": "3",
+      "choices": [
+        { "text": "Scarica i dati e neutralizza il virus", "dest": 19 },
+        { "text": "Lascia il computer ed esplora ulteriormente", "dest": 20 }
+      ]
+    },
+    {
+      "id": 19,
+      "story": "Scene 19: Nel corridoio finale ti avvicini al laboratorio dove è custodito il virus. Calcola la corrente se V = 100V e R = 25Ω.",
+      "image": "img/laboratorio.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Calcola la corrente: V = 100V, R = 25Ω. Quanto vale I?",
+      "correctAnswer": "4",
+      "choices": [
+        { "text": "Entra nel laboratorio e completa la missione", "dest": 20 },
+        { "text": "Ritirati per salvare il team", "dest": 21 }
+      ]
+    },
+    {
+      "id": 20,
+      "story": "Scene 20: Finale - La missione è completata con successo. Hai neutralizzato il virus e salvato il mondo.",
+      "image": "img/finale_successo.jpg",
+      "puzzleEnabled": false,
+      "puzzleText": "",
+      "correctAnswer": "",
+      "choices": []
+    },
+    {
+      "id": 21,
+      "story": "Scene 21: Finale - La missione si conclude in modo incerto: il virus è sfuggito e il team si disperde, ma la speranza resta.",
+      "image": "img/finale_incerto.jpg",
+      "puzzleEnabled": false,
+      "puzzleText": "",
+      "correctAnswer": "",
+      "choices": []
+    }
+  ]
+}

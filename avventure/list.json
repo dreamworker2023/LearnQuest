@@ -1,0 +1,24 @@
+[
+    {
+      "file": "avventura1.json",
+      "title": "Ω TEAM Mission",
+      "copertina": "img/bg_Omega.jpg"
+    },
+      {
+        "file": "avventura2.json",
+        "title": "Missione Impossibile: Furto di JavaScript",
+        "copertina": "img/bg_mission.jpg"
+      },
+        {
+          "file": "avventura3.json",
+          "title": "L'Isola del Tesoro: Il Codice dei Pirati",
+          "copertina": "img/bg_pirate.jpg"
+        },
+        
+          {
+            "file": "avventura4.json",
+            "title": "Delitto a Noir City: Il Caso del Database Perduto",
+            "copertina": "img/noir_bg.jpg"
+          }   
+  ]
+  

@@ -1,0 +1,239 @@
+{
+    "title": "Delitto a Noir City: Il Caso del Database Perduto",
+    "theme": "ocra",
+    "bgImage": "img/noir_bg.jpg",
+    "scenes": [
+      {
+        "id": 1,
+        "story": "New York, 1947. Il fumo denso del sigaro invade il mio ufficio quando una donna misteriosa entra con un caso impossibile: un database rubato contenente informazioni riservate. Per iniziare l'indagine, devi identificare tutti i database disponibili.",
+        "image": "img/noir1.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale comando MySQL elenca tutti i database disponibili?",
+        "correctAnswer": "SHOW DATABASES;",
+        "choices": [
+          { "text": "Interroga il contabile", "dest": 2 }
+        ]
+      },
+      {
+        "id": 2,
+        "story": "Il contabile, visibilmente agitato, conferma che sono stati cancellati dei record importanti. Per analizzare il problema, devo vedere tutti i record di una tabella specifica.",
+        "image": "img/noir2.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale comando MySQL permette di vedere tutti i record di una tabella?",
+        "correctAnswer": "SELECT * FROM nome_tabella;",
+        "choices": [
+          { "text": "Analizza i record", "dest": 3 }
+        ]
+      },
+      {
+        "id": 3,
+        "story": "Dai log emerge un'attività sospetta: qualcuno ha operato nel database alle prime ore del mattino. Devo scoprire chi era connesso.",
+        "image": "img/noir3.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale comando mostra gli utenti connessi al database MySQL?",
+        "correctAnswer": "SHOW PROCESSLIST;",
+        "choices": [
+          { "text": "Controlla i log", "dest": 4 }
+        ]
+      },
+      {
+        "id": 4,
+        "story": "I log indicano che una tabella specifica è stata modificata. Per capire meglio, devo sapere quali tabelle esistono nel database.",
+        "image": "img/noir4.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale comando SQL permette di visualizzare le tabelle di un database?",
+        "correctAnswer": "SHOW TABLES;",
+        "choices": [
+          { "text": "Identifica la tabella sospetta", "dest": 5 }
+        ]
+      },
+      {
+        "id": 5,
+        "story": "La tabella degli utenti sembra essere stata manipolata. Analizzo la sua struttura per trovare indizi utili.",
+        "image": "img/noir5.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale comando MySQL mostra la struttura di una tabella?",
+        "correctAnswer": "DESCRIBE nome_tabella;",
+        "choices": [
+          { "text": "Esamina la struttura", "dest": 6 }
+        ]
+      },
+      {
+        "id": 6,
+        "story": "Per isolare il sospetto, devo filtrare i dati in modo da evidenziare solo le informazioni rilevanti.",
+        "image": "img/noir6.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale clausola SQL viene usata per filtrare i risultati di una query?",
+        "correctAnswer": "WHERE",
+        "choices": [
+          { "text": "Filtra i dati", "dest": 7 }
+        ]
+      },
+      {
+        "id": 7,
+        "story": "Per ordinare le informazioni in modo da far emergere indizi, devo utilizzare la clausola corretta.",
+        "image": "img/noir7.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale clausola SQL permette di ordinare i risultati?",
+        "correctAnswer": "ORDER BY",
+        "choices": [
+          { "text": "Ordina i risultati", "dest": 8 }
+        ]
+      },
+      {
+        "id": 8,
+        "story": "Scopro che alcuni dati sono stati copiati in un'altra tabella. Per confermare questa operazione, devo replicarla.",
+        "image": "img/noir8.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale comando SQL permette di copiare dati da una tabella a un'altra?",
+        "correctAnswer": "INSERT INTO nome_tabella SELECT * FROM altra_tabella;",
+        "choices": [
+          { "text": "Verifica la copia dei dati", "dest": 9 }
+        ]
+      },
+      {
+        "id": 9,
+        "story": "Ulteriori indizi rivelano che i dati sono stati esportati in un file esterno. Devo scoprire come è stato fatto.",
+        "image": "img/noir9.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale comando SQL permette di esportare dati in un file?",
+        "correctAnswer": "SELECT ... INTO OUTFILE 'file.csv';",
+        "choices": [
+          { "text": "Indaga sull'esportazione", "dest": 10 }
+        ]
+      },
+      {
+        "id": 10,
+        "story": "Il sospetto ha modificato alcuni record prima di sparire. Devo ricostruire l'ultima modifica operata.",
+        "image": "img/noir10.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale comando SQL aggiorna un record esistente?",
+        "correctAnswer": "UPDATE nome_tabella SET colonna='valore' WHERE condizione;",
+        "choices": [
+          { "text": "Analizza la modifica", "dest": 11 }
+        ]
+      },
+      {
+        "id": 11,
+        "story": "Una traccia emergente indica che la struttura della tabella è stata modificata. Devo verificare l'aggiunta di nuovi campi.",
+        "image": "img/noir11.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale comando SQL permette di aggiungere una colonna a una tabella?",
+        "correctAnswer": "ALTER TABLE nome_tabella ADD COLUMN nome_colonna tipo;",
+        "choices": [
+          { "text": "Controlla la nuova struttura", "dest": 12 }
+        ]
+      },
+      {
+        "id": 12,
+        "story": "Alcuni record compromessi devono essere rimossi per proteggere le informazioni sensibili.",
+        "image": "img/noir12.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale comando SQL permette di eliminare una riga specifica?",
+        "correctAnswer": "DELETE FROM nome_tabella WHERE condizione;",
+        "choices": [
+          { "text": "Rimuovi i record compromessi", "dest": 13 }
+        ]
+      },
+      {
+        "id": 13,
+        "story": "Per ricostruire la base dati, devo creare una nuova tabella per contenere le informazioni corrette.",
+        "image": "img/noir13.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale comando SQL serve per creare una nuova tabella?",
+        "correctAnswer": "CREATE TABLE nome_tabella (colonna1 tipo, colonna2 tipo, ...);",
+        "choices": [
+          { "text": "Crea la nuova tabella", "dest": 14 }
+        ]
+      },
+      {
+        "id": 14,
+        "story": "Per eliminare definitivamente le tracce compromettenti, devo rimuovere un'intera tabella.",
+        "image": "img/noir14.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale comando SQL serve per eliminare una tabella intera?",
+        "correctAnswer": "DROP TABLE nome_tabella;",
+        "choices": [
+          { "text": "Elimina la tabella compromessa", "dest": 15 }
+        ]
+      },
+      {
+        "id": 15,
+        "story": "Per aggiornare il sistema, devo modificare la struttura di una tabella esistente.",
+        "image": "img/noir15.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale comando SQL consente di modificare la struttura di una tabella?",
+        "correctAnswer": "ALTER TABLE nome_tabella MODIFY COLUMN nome_colonna nuovo_tipo;",
+        "choices": [
+          { "text": "Modifica la struttura", "dest": 16 }
+        ]
+      },
+      {
+        "id": 16,
+        "story": "Le prove indicano che il nome di una tabella è stato cambiato. Devo rinominarla per ricostruire l'indagine.",
+        "image": "img/noir16.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale comando SQL consente di rinominare una tabella?",
+        "correctAnswer": "RENAME TABLE vecchio_nome TO nuovo_nome;",
+        "choices": [
+          { "text": "Rinomina la tabella", "dest": 17 }
+        ]
+      },
+      {
+        "id": 17,
+        "story": "Per unire le informazioni di tabelle differenti e ottenere un quadro completo, devo utilizzare un join.",
+        "image": "img/noir17.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale comando SQL viene usato per unire due tabelle?",
+        "correctAnswer": "INNER JOIN",
+        "choices": [
+          { "text": "Unisci le tabelle", "dest": 18 }
+        ]
+      },
+      {
+        "id": 18,
+        "story": "I dati raccolti devono essere raggruppati per individuare pattern nascosti.",
+        "image": "img/noir18.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale comando SQL permette di raggruppare i risultati?",
+        "correctAnswer": "GROUP BY",
+        "choices": [
+          { "text": "Raggruppa i dati", "dest": 19 }
+        ]
+      },
+      {
+        "id": 19,
+        "story": "Dopo aver raggruppato i dati, devo filtrare i gruppi per trovare quelli significativi.",
+        "image": "img/noir19.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale comando SQL consente di filtrare i gruppi di risultati?",
+        "correctAnswer": "HAVING",
+        "choices": [
+          { "text": "Filtra i gruppi", "dest": 20 }
+        ]
+      },
+      {
+        "id": 20,
+        "story": "Per avere una visione completa della situazione, devo contare il numero di record presenti in una tabella.",
+        "image": "img/noir20.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale comando SQL restituisce il numero di righe in una tabella?",
+        "correctAnswer": "SELECT COUNT(*) FROM nome_tabella;",
+        "choices": [
+          { "text": "Conta i record", "dest": 21 }
+        ]
+      },
+      {
+        "id": 21,
+        "story": "Infine, per proteggere il sistema e aggiornare i privilegi, devo modificare i permessi degli utenti. Con le prove raccolte, posso finalmente chiudere il caso.",
+        "image": "img/noir21.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale comando SQL serve per modificare i privilegi di un utente?",
+        "correctAnswer": "GRANT",
+        "choices": [
+          { "text": "Concludi l'indagine", "dest": 21 }
+        ]
+      }
+    ]
+  }
+  

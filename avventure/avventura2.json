@@ -1,0 +1,257 @@
+{
+    "title": "Missione Impossibile: Furto di JavaScript",
+    "theme": "white",
+    "bgImage": "img/bg_mission.jpg",
+    "scenes": [
+      {
+        "id": 1,
+        "story": "Scena 1: La tua missione inizia. Come Agente X, devi bypassare la porta principale della sede nemica. Per sbloccarla, risolvi un enigma di JavaScript.",
+        "image": "img/mission1.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale parola chiave viene utilizzata per dichiarare una variabile con scope di blocco nel JavaScript moderno?",
+        "correctAnswer": "let",
+        "choices": [
+          { "text": "Procedi al terminale del computer", "dest": 2 },
+          { "text": "Cerca un ingresso alternativo", "dest": 3 }
+        ]
+      },
+      {
+        "id": 2,
+        "story": "Scena 2: Arrivi a un terminale high-tech. Per hackerarlo, risolvi il puzzle di JavaScript.",
+        "image": "img/mission2.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale metodo viene usato per stampare testo sulla console in JavaScript?",
+        "correctAnswer": "console.log",
+        "choices": [
+          { "text": "Accedi al sistema", "dest": 4 },
+          { "text": "Prova a bypassare il terminale", "dest": 5 }
+        ]
+      },
+      {
+        "id": 3,
+        "story": "Scena 3: Scopri un passaggio segreto dietro a un muro falso. Per aprire la porta segreta, risolvi il seguente puzzle di JavaScript.",
+        "image": "img/mission3.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Come si scrive un commento su una singola linea in JavaScript?",
+        "correctAnswer": "//",
+        "choices": [
+          { "text": "Entra nel passaggio segreto", "dest": 4 },
+          { "text": "Ritorna alla sala principale", "dest": 2 }
+        ]
+      },
+      {
+        "id": 4,
+        "story": "Scena 4: Entri in una stanza piena di telecamere di sicurezza. Per disabilitarle, risolvi il puzzle.",
+        "image": "img/mission4.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale operatore viene utilizzato per l'uguaglianza stretta in JavaScript?",
+        "correctAnswer": "===",
+        "choices": [
+          { "text": "Disabilita le telecamere", "dest": 7 },
+          { "text": "Bypassa la stanza", "dest": 8 }
+        ]
+      },
+      {
+        "id": 5,
+        "story": "Scena 5: Una griglia laser blocca il tuo percorso. Per disattivarla, devi risolvere un enigma di JavaScript.",
+        "image": "img/mission5.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale parola chiave viene usata per dichiarare una funzione in JavaScript?",
+        "correctAnswer": "function",
+        "choices": [
+          { "text": "Disattiva i laser", "dest": 7 },
+          { "text": "Cerca una via alternativa", "dest": 8 }
+        ]
+      },
+      {
+        "id": 6,
+        "story": "Scena 6: Ti avvicini a una massiccia porta blindata. Per sbloccarla, rispondi alla seguente domanda.",
+        "image": "img/mission6.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Come si crea un array in JavaScript usando la sintassi letterale?",
+        "correctAnswer": "[]",
+        "choices": [
+          { "text": "Apri il caveau", "dest": 9 },
+          { "text": "Prova un accesso alternativo", "dest": 10 }
+        ]
+      },
+      {
+        "id": 7,
+        "story": "Scena 7: In una stanza debolmente illuminata, ti confronti con il mainframe del computer centrale. Per bypassare la sua sicurezza, risolvi il puzzle.",
+        "image": "img/mission7.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale operatore viene usato per concatenare stringhe in JavaScript?",
+        "correctAnswer": "+",
+        "choices": [
+          { "text": "Accedi al mainframe", "dest": 11 },
+          { "text": "Bypassa la sicurezza", "dest": 12 }
+        ]
+      },
+      {
+        "id": 8,
+        "story": "Scena 8: Entri nella sala di controllo degli ascensori. Per chiamare l'ascensore, devi risolvere un enigma di JavaScript.",
+        "image": "img/mission8.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale funzione converte una stringa in un numero in JavaScript?",
+        "correctAnswer": "parseInt",
+        "choices": [
+          { "text": "Chiama l'ascensore", "dest": 11 },
+          { "text": "Bypassa i controlli", "dest": 12 }
+        ]
+      },
+      {
+        "id": 9,
+        "story": "Scena 9: Arrivi in una stanza blindata sicura. Per aprirla, risolvi questo enigma di JavaScript.",
+        "image": "img/mission9.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Come si inizia un commento su più linee in JavaScript?",
+        "correctAnswer": "/*",
+        "choices": [
+          { "text": "Apri la cassaforte", "dest": 13 },
+          { "text": "Disattiva l'allarme", "dest": 14 }
+        ]
+      },
+      {
+        "id": 10,
+        "story": "Scena 10: Al pannello di controllo della griglia laser, devi disattivare la griglia. Rispondi al seguente quesito:",
+        "image": "img/mission10.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale metodo viene usato per aggiungere un elemento a un array in JavaScript?",
+        "correctAnswer": "push",
+        "choices": [
+          { "text": "Disattiva i laser", "dest": 13 },
+          { "text": "Trova una via alternativa", "dest": 14 }
+        ]
+      },
+      {
+        "id": 11,
+        "story": "Scena 11: Arrivi a un ingresso segreto del laboratorio. Per accedervi, risolvi questa domanda.",
+        "image": "img/mission11.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Qual è il risultato di typeof [] in JavaScript?",
+        "correctAnswer": "object",
+        "choices": [
+          { "text": "Entra nel laboratorio", "dest": 15 },
+          { "text": "Ritorna nel corridoio", "dest": 12 }
+        ]
+      },
+      {
+        "id": 12,
+        "story": "Scena 12: In un lungo corridoio, incontri una porta chiusa a chiave. Per aprirla, rispondi a:",
+        "image": "img/mission12.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale simbolo viene usato per concatenare le stringhe in JavaScript?",
+        "correctAnswer": "+",
+        "choices": [
+          { "text": "Procedi verso il laboratorio", "dest": 15 },
+          { "text": "Esplora la stanza laterale", "dest": 16 }
+        ]
+      },
+      {
+        "id": 13,
+        "story": "Scena 13: In una stanza laterale silenziosa, trovi una keycard nascosta in un cassetto. Per recuperarla, risolvi:",
+        "image": "img/mission13.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Come si dichiara una costante in JavaScript?",
+        "correctAnswer": "const",
+        "choices": [
+          { "text": "Recupera la keycard", "dest": 16 },
+          { "text": "Controlla i log di sicurezza", "dest": 17 }
+        ]
+      },
+      {
+        "id": 14,
+        "story": "Scena 14: Accedi alla sala dei log di sicurezza. Per sovrascrivere i log, risolvi:",
+        "image": "img/mission14.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale metodo rimuove l'ultimo elemento da un array in JavaScript?",
+        "correctAnswer": "pop",
+        "choices": [
+          { "text": "Sovrascrivi i log", "dest": 17 },
+          { "text": "Ritorna al corridoio", "dest": 16 }
+        ]
+      },
+      {
+        "id": 15,
+        "story": "Scena 15: Finalmente arrivi al laboratorio principale. Per accedere al computer centrale, risolvi:",
+        "image": "img/mission15.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Come si crea un oggetto letterale in JavaScript?",
+        "correctAnswer": "{}",
+        "choices": [
+          { "text": "Accedi al computer centrale", "dest": 18 },
+          { "text": "Ispeziona l'attrezzatura del laboratorio", "dest": 19 }
+        ]
+      },
+      {
+        "id": 16,
+        "story": "Scena 16: In un corridoio fioco, trovi una porta che conduce a una sala di stoccaggio. Per sbloccarla, risolvi:",
+        "image": "img/mission16.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Qual è la sintassi corretta per una arrow function in JavaScript?",
+        "correctAnswer": "=>",
+        "choices": [
+          { "text": "Apri la porta verso il laboratorio", "dest": 18 },
+          { "text": "Entra nella sala di stoccaggio", "dest": 19 }
+        ]
+      },
+      {
+        "id": 17,
+        "story": "Scena 17: Nella sala dei log di sicurezza, trovi un file nascosto. Per estrarre il codice segreto, risolvi:",
+        "image": "img/mission17.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale metodo converte una stringa JSON in un oggetto in JavaScript?",
+        "correctAnswer": "JSON.parse",
+        "choices": [
+          { "text": "Estrai il codice segreto", "dest": 18 },
+          { "text": "Ritorna alla sala principale", "dest": 16 }
+        ]
+      },
+      {
+        "id": 18,
+        "story": "Scena 18: Entri nella sala del computer centrale. Per scaricare i dati classificati, risolvi questo puzzle:",
+        "image": "img/mission18.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale parola chiave viene usata per gestire le eccezioni in JavaScript?",
+        "correctAnswer": "try",
+        "choices": [
+          { "text": "Scarica i dati", "dest": 20 },
+          { "text": "Bypassa la sicurezza", "dest": 19 }
+        ]
+      },
+      {
+        "id": 19,
+        "story": "Scena 19: Nella sala di override della sicurezza, devi bypassare il firewall finale. Rispondi a:",
+        "image": "img/mission19.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Cosa fa l'operatore '===' in JavaScript?",
+        "correctAnswer": "uguaglianza stretta",
+        "choices": [
+          { "text": "Procedi verso il caveau finale", "dest": 20 },
+          { "text": "Riprova l'override", "dest": 18 }
+        ]
+      },
+      {
+        "id": 20,
+        "story": "Scena 20: Ti trovi di fronte al caveau finale. Per aprirlo, risolvi:",
+        "image": "img/mission20.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Qual è lo scopo della parola chiave 'this' in JavaScript?",
+        "correctAnswer": "l'oggetto corrente",
+        "choices": [
+          { "text": "Apri il caveau e completa la missione", "dest": 21 },
+          { "text": "Annulla la missione", "dest": 21 }
+        ]
+      },
+      {
+        "id": 21,
+        "story": "Scena 21: Missione compiuta! Sei riuscito a infiltrarti nella struttura e ottenere i dati classificati. La tua padronanza di JavaScript ha salvato la situazione!",
+        "image": "img/mission21.jpg",
+        "puzzleEnabled": false,
+        "puzzleText": "",
+        "correctAnswer": "",
+        "choices": []
+      }
+    ]
+  }
+  

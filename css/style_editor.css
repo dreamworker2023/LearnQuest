@@ -1,0 +1,48 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: linear-gradient(to right top, #0d0d0d, #2c2c30, #4c4c54, #6d6f7c, #8f94a6);
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2, h3, h4 {
+      text-align: center;
+    }
+    .section {
+      background-color: #0D0D0D;
+      border: 1px solid #F29849;
+      padding: 15px;
+      color:#F2CF8D;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    input[type="text"], input[type="number"], textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 8px 12px;
+      margin: 5px 0;
+      cursor: pointer;
+    }
+    .scene {
+      border: 1px solid #F2CF8D;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    .choice {
+      border: 1px dashed #8F94A6;
+      padding: 5px;
+      margin-bottom: 5px;
+      border-radius: 3px;
+    }
+    .hidden {
+      display: none;
+    }

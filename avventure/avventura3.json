@@ -1,0 +1,376 @@
+{
+  "title": "L'Isola del Tesoro: Il Codice dei Pirati",
+  "theme": "blue",
+  "bgImage": "img/bg_pirate.jpg",
+  "scenes": [
+    {
+      "id": 1,
+      "story": "Scena 1: Sei a bordo della tua nave pirata e vedi un'isola misteriosa all'orizzonte. La leggenda narra che al suo interno si nasconda un tesoro inestimabile, protetto da enigmi. Per approdare, risolvi questo enigma Python.",
+      "image": "img/pirate1.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Quale simbolo si usa per iniziare un commento in Python?",
+      "correctAnswer": "#",
+      "choices": [
+        {
+          "text": "Approda sull'isola",
+          "dest": 2
+        },
+        {
+          "text": "Cambia rotta e approda comunque",
+          "dest": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "story": "Scena 2: Scendi dalla nave e cammini lungo la spiaggia sabbiosa. Il sentiero sembra condurti al cuore dell'isola, dove il tesoro attende. Prima di procedere, risolvi:",
+      "image": "img/pirate2.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Come si definisce una funzione in Python?",
+      "correctAnswer": "def",
+      "choices": [
+        {
+          "text": "Prosegui lungo il sentiero",
+          "dest": 3
+        },
+        {
+          "text": "Esplora la foresta laterale",
+          "dest": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "story": "Scena 3: Mentre cammini, trovi un antico cartiglio inciso con simboli misteriosi. Sembra un indizio per trovare il tesoro. Per decifrarlo, risolvi:",
+      "image": "img/pirate3.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Quale operatore si usa per l'assegnazione in Python?",
+      "correctAnswer": "=",
+      "choices": [
+        {
+          "text": "Decifra il cartiglio",
+          "dest": 4
+        },
+        {
+          "text": "Ignora il cartiglio e prosegui",
+          "dest": 4
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "story": "Scena 4: Il cartiglio ti indica la direzione verso una vecchia mappa nascosta in una grotta. Una porta digitale blocca l'ingresso. Per aprirla, risolvi:",
+      "image": "img/pirate4.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Come si crea una lista in Python usando la notazione letterale?",
+      "correctAnswer": "[]",
+      "choices": [
+        {
+          "text": "Apri la grotta",
+          "dest": 5
+        },
+        {
+          "text": "Controlla l'esterno della grotta",
+          "dest": 5
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "story": "Scena 5: All'interno della grotta, la luce è fioca e il silenzio regna sovrano. Trovi una scatola di legno con un lucchetto digitale. Per aprirla, risolvi:",
+      "image": "img/pirate5.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Quale funzione restituisce la lunghezza di un oggetto in Python?",
+      "correctAnswer": "len",
+      "choices": [
+        {
+          "text": "Apri la scatola",
+          "dest": 6
+        },
+        {
+          "text": "Lascia la scatola e continua",
+          "dest": 6
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "story": "Scena 6: La scatola rivela un frammento della mappa e un indizio: 'Solo chi conosce il ciclo potrà procedere'. Per avanzare, risolvi:",
+      "image": "img/pirate6.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Quale parola chiave si usa per iterare su una sequenza in Python?",
+      "correctAnswer": "for",
+      "choices": [
+        {
+          "text": "Segui la mappa",
+          "dest": 7
+        },
+        {
+          "text": "Ignora l'indizio e procedi",
+          "dest": 7
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "story": "Scena 7: Raggiungi una radura dove trovi una vecchia quercia incisa con numeri. Un enigma è inciso sul tronco.",
+      "image": "img/pirate7.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Come si converte una stringa in un numero intero in Python?",
+      "correctAnswer": "int()",
+      "choices": [
+        {
+          "text": "Leggi l'iscrizione",
+          "dest": 8
+        },
+        {
+          "text": "Passa oltre la quercia",
+          "dest": 8
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "story": "Scena 8: Dietro la quercia, trovi una piccola radura con un antico forziere. Per aprirlo, devi risolvere un enigma.",
+      "image": "img/pirate8.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Quale funzione si usa per mostrare un output in Python?",
+      "correctAnswer": "print",
+      "choices": [
+        {
+          "text": "Apri il forziere",
+          "dest": 9
+        },
+        {
+          "text": "Controlla il contenuto esterno",
+          "dest": 9
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "story": "Scena 9: Il forziere contiene un frammento della mappa e un messaggio criptato. Per decifrarlo, risolvi:",
+      "image": "img/pirate9.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Come si inizia un commento su più righe in Python?",
+      "correctAnswer": "\"\"\"",
+      "choices": [
+        {
+          "text": "Decifra il messaggio",
+          "dest": 10
+        },
+        {
+          "text": "Ignora il messaggio",
+          "dest": 10
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "story": "Scena 10: Continuando, arrivi a una vecchia torre abbandonata. All'interno è custodito un frammento vitale della mappa.",
+      "image": "img/pirate10.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Quale operatore si usa per la divisione intera in Python?",
+      "correctAnswer": "//",
+      "choices": [
+        {
+          "text": "Esplora la torre",
+          "dest": 11
+        },
+        {
+          "text": "Controlla l'esterno della torre",
+          "dest": 11
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "story": "Scena 11: Dentro la torre, scopri un laboratorio segreto di un vecchio scienziato pirata. Per sbloccare un dispositivo, risolvi:",
+      "image": "img/pirate11.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Come si crea un dizionario in Python usando la sintassi letterale?",
+      "correctAnswer": "{}",
+      "choices": [
+        {
+          "text": "Attiva il dispositivo",
+          "dest": 12
+        },
+        {
+          "text": "Lascia il laboratorio",
+          "dest": 12
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "story": "Scena 12: Il dispositivo rivela la posizione del tesoro, ma una porta digitale lo blocca. Per aprirla, risolvi:",
+      "image": "img/pirate12.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Quale parola chiave si usa per gestire le eccezioni in Python?",
+      "correctAnswer": "try",
+      "choices": [
+        {
+          "text": "Apri la porta",
+          "dest": 13
+        },
+        {
+          "text": "Cerca un'altra via",
+          "dest": 13
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "story": "Scena 13: Oltre la porta, ti trovi in un corridoio buio con simboli antichi. Un enigma Python ti attende per proseguire.",
+      "image": "img/pirate13.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Quale metodo aggiunge un elemento alla fine di una lista in Python?",
+      "correctAnswer": "append",
+      "choices": [
+        {
+          "text": "Procedi lungo il corridoio",
+          "dest": 14
+        },
+        {
+          "text": "Esamina i simboli",
+          "dest": 14
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "story": "Scena 14: Il corridoio ti porta a una stanza con una mappa completa. Per svelare il prossimo indizio, risolvi:",
+      "image": "img/pirate14.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Qual è la parola chiave per importare un modulo in Python?",
+      "correctAnswer": "import",
+      "choices": [
+        {
+          "text": "Decifra il nuovo indizio",
+          "dest": 15
+        },
+        {
+          "text": "Ignora l'indizio e avanza",
+          "dest": 15
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "story": "Scena 15: In una radura segreta, trovi un vecchio diario pirata che parla di un tesoro nascosto. Per continuare, risolvi:",
+      "image": "img/pirate15.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Qual è la funzione per convertire un valore in una stringa in Python?",
+      "correctAnswer": "str",
+      "choices": [
+        {
+          "text": "Leggi il diario",
+          "dest": 16
+        },
+        {
+          "text": "Ignora il diario",
+          "dest": 16
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "story": "Scena 16: Il diario rivela che il tesoro è nascosto su un'isola segreta. Per raggiungerla, devi superare un ponte sospeso. Risolvi:",
+      "image": "img/pirate16.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Come si crea una tupla in Python?",
+      "correctAnswer": "()",
+      "choices": [
+        {
+          "text": "Attraversa il ponte",
+          "dest": 17
+        },
+        {
+          "text": "Controlla il ponte prima di attraversare",
+          "dest": 17
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "story": "Scena 17: Dopo aver attraversato il ponte, arrivi in una baia dove la mappa indica la posizione del tesoro. Una sfida finale ti attende.",
+      "image": "img/pirate17.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Quale operatore si usa per l'elevazione a potenza in Python?",
+      "correctAnswer": "**",
+      "choices": [
+        {
+          "text": "Inizia la ricerca del tesoro",
+          "dest": 18
+        },
+        {
+          "text": "Esamina la baia con attenzione",
+          "dest": 18
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "story": "Scena 18: Raggiungi una caverna nascosta sulla spiaggia, dove si dice sia sepolto il tesoro. Per aprirla, risolvi:",
+      "image": "img/pirate18.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Quale funzione integrata restituisce il valore massimo di un insieme di dati in Python?",
+      "correctAnswer": "max",
+      "choices": [
+        {
+          "text": "Apri la caverna",
+          "dest": 19
+        },
+        {
+          "text": "Esamina l'ingresso della caverna",
+          "dest": 19
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "story": "Scena 19: Dentro la caverna, il sentiero è tortuoso e pieno di insidie. Per superare questo tratto, risolvi:",
+      "image": "img/pirate19.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Cosa verifica la parola chiave \"in\" in Python?",
+      "correctAnswer": "membership",
+      "choices": [
+        {
+          "text": "Continua lungo il sentiero",
+          "dest": 20
+        },
+        {
+          "text": "Cerca una via alternativa",
+          "dest": 20
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "story": "Scena 20: Sei quasi arrivato! Il tesoro è custodito in una camera segreta all'interno di un antico tempio. Per aprire la porta, risolvi:",
+      "image": "img/pirate20.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "Quale funzione integrata restituisce la somma di tutti gli elementi in un insieme di dati in Python?",
+      "correctAnswer": "sum",
+      "choices": [
+        {
+          "text": "Apri la porta del tempio",
+          "dest": 21
+        },
+        {
+          "text": "Esamina il tempio prima di entrare",
+          "dest": 21
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "story": "Scena 21: Finalmente, hai raggiunto la camera segreta! Il tesoro dei pirati e il segreto del codice Python sono ora tuoi. Congratulazioni, giovane pirata, la tua avventura è compiuta!",
+      "image": "img/pirate21.jpg",
+      "puzzleEnabled": false,
+      "puzzleText": "",
+      "correctAnswer": "",
+      "choices": []
+    }
+  ]
+}
