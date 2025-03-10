@@ -18,7 +18,7 @@ Questo progetto permette di creare e giocare a storie interattive personalizzate
 
 ## 📂 Struttura del Progetto
 - `editor.html` → Editor per creare nuove avventure.
-- `index.html` (ex `gameEnginev2.html`) → Gioco interattivo basato sui file JSON.
+- `index.html`  → Gioco interattivo basato sui file JSON.
 - `avventure/` → Cartella con le avventure salvate.
 - `css/` → Stili per l'editor e il gioco.
 - `img/` → Immagini utilizzate nelle avventure.
@@ -51,7 +51,7 @@ This project allows you to create and play custom interactive stories. Students 
 
 ## 📂 Project Structure
 - `editor.html` → Editor to create new adventures.
-- `index.html` (formerly `gameEnginev2.html`) → Interactive game based on JSON files.
+- `index.html`  → Interactive game based on JSON files.
 - `avventure/` → Folder containing saved adventures.
 - `css/` → Styles for editor and game.
 - `img/` → Images used in adventures.
