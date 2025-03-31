@@ -1,0 +1,239 @@
+{
+    "title": "Missione Genesis: Il Codice Perduto",
+    "theme": "spaceblue",
+    "bgImage": "img/bg_scifi.jpg",
+    "scenes": [
+      {
+        "id": 1,
+        "story": "Anno 2147. L’astronave Genesis è pronta per partire verso una stazione spaziale abbandonata, dove si nasconde un antico codice vitale. Prima di atterrare, devi preparare il modulo di input per il sistema di accesso.",
+        "image": "img/scifi1.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale tag HTML viene utilizzato per creare un modulo di input?",
+        "correctAnswer": "<form>",
+        "choices": [
+          { "text": "Atterra sulla stazione", "dest": 2 }
+        ]
+      },
+      {
+        "id": 2,
+        "story": "L'astronave si avvicina al pianeta. Durante l'atterraggio, noti un problema con il collegamento al foglio di stile esterno del sistema di navigazione.",
+        "image": "img/scifi2.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale tag HTML viene usato per collegare un file CSS esterno?",
+        "correctAnswer": "<link>",
+        "choices": [
+          { "text": "Correggi il collegamento e continua", "dest": 3 }
+        ]
+      },
+      {
+        "id": 3,
+        "story": "Atterri sulla stazione spaziale abbandonata. Esci dall'astronave e noti un grande display olografico che mostra l'immagine della stazione.",
+        "image": "img/scifi3.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale tag HTML viene usato per inserire un'immagine?",
+        "correctAnswer": "<img>",
+        "choices": [
+          { "text": "Avvia l'esplorazione della stazione", "dest": 4 }
+        ]
+      },
+      {
+        "id": 4,
+        "story": "Entri in un corridoio futuristico costellato di pannelli olografici. Una scritta lampeggiante ti chiede di controllare il colore del testo del display.",
+        "image": "img/scifi4.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale proprietà CSS viene usata per cambiare il colore del testo?",
+        "correctAnswer": "color",
+        "choices": [
+          { "text": "Controlla il display", "dest": 5 }
+        ]
+      },
+      {
+        "id": 5,
+        "story": "Proseguendo nel corridoio, raggiungi una sala di controllo dove un pannello digitale è fuori servizio. Devi ripararlo per accedere al sistema.",
+        "image": "img/scifi5.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale tag HTML definisce una sezione di un documento?",
+        "correctAnswer": "<section>",
+        "choices": [
+          { "text": "Ripara il pannello di controllo", "dest": 6 }
+        ]
+      },
+      {
+        "id": 6,
+        "story": "Nel pannello riparato, un messaggio olografico ti informa che il titolo principale della pagina di sistema è errato. Per correggerlo, devi rispondere a un enigma.",
+        "image": "img/scifi6.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale tag HTML rappresenta il titolo principale di una pagina?",
+        "correctAnswer": "<h1>",
+        "choices": [
+          { "text": "Correggi il titolo e prosegui", "dest": 7 }
+        ]
+      },
+      {
+        "id": 7,
+        "story": "Il messaggio corregge il titolo e rivela coordinate segrete per una sala dati. Il display olografico mostra un paragrafo che spiega la situazione.",
+        "image": "img/scifi7.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale tag HTML viene usato per definire un paragrafo?",
+        "correctAnswer": "<p>",
+        "choices": [
+          { "text": "Procedi verso la sala dati", "dest": 8 }
+        ]
+      },
+      {
+        "id": 8,
+        "story": "Arrivi davanti a una grande porta digitale bloccata da un'interfaccia obsoleta. Per sbloccarla, devi risolvere il seguente enigma.",
+        "image": "img/scifi8.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale proprietà CSS viene usata per impostare lo sfondo di un elemento?",
+        "correctAnswer": "background-image",
+        "choices": [
+          { "text": "Sblocca la porta", "dest": 9 }
+        ]
+      },
+      {
+        "id": 9,
+        "story": "La porta si apre lentamente, rivelando una sala piena di schemi olografici e dati digitali. Sul grande schermo, compare un link ipertestuale che guida il tuo prossimo passo.",
+        "image": "img/scifi9.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale tag HTML viene usato per creare un collegamento ipertestuale?",
+        "correctAnswer": "<a>",
+        "choices": [
+          { "text": "Interagisci con il link", "dest": 10 }
+        ]
+      },
+      {
+        "id": 10,
+        "story": "Il link ti porta a una stanza di analisi dove un ologramma mostra una mappa interattiva della stazione. La mappa evidenzia una serie di informazioni con spaziatura e allineamenti curati.",
+        "image": "img/scifi10.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale proprietà CSS viene usata per aggiungere spaziatura interna a un elemento?",
+        "correctAnswer": "padding",
+        "choices": [
+          { "text": "Analizza la mappa", "dest": 11 }
+        ]
+      },
+      {
+        "id": 11,
+        "story": "La mappa rivela due percorsi: il corridoio principale e una scala di emergenza. Devi decidere quale strada prendere per raggiungere il centro di comando.",
+        "image": "img/scifi11.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale tag HTML viene usato per creare un elenco non ordinato?",
+        "correctAnswer": "<ul>",
+        "choices": [
+          { "text": "Prendi il corridoio principale", "dest": 12 },
+          { "text": "Sali le scale di emergenza", "dest": 13 }
+        ]
+      },
+      {
+        "id": 12,
+        "story": "Percorrendo il corridoio principale, ti imbatti in un pannello interattivo che mostra il layout della stazione. L'interfaccia ti chiede di evidenziare l'intestazione secondaria.",
+        "image": "img/scifi12.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale tag HTML viene usato per definire un'intestazione secondaria?",
+        "correctAnswer": "<h2>",
+        "choices": [
+          { "text": "Interagisci con il pannello", "dest": 14 }
+        ]
+      },
+      {
+        "id": 13,
+        "story": "Salendo le scale di emergenza, arrivi in un'area d'attesa con vecchi monitor e registri digitali. Devi analizzare i dati per trovare indizi utili.",
+        "image": "img/scifi13.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale proprietà CSS controlla la larghezza di un elemento?",
+        "correctAnswer": "width",
+        "choices": [
+          { "text": "Esamina i monitor", "dest": 14 }
+        ]
+      },
+      {
+        "id": 14,
+        "story": "Sia il percorso del corridoio che quello delle scale convergono in un centro di controllo centrale con un'interfaccia olografica. Questa interfaccia mostra un link cruciale per accedere ai dati segreti.",
+        "image": "img/scifi14.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale tag HTML viene usato per definire un link ipertestuale?",
+        "correctAnswer": "<a>",
+        "choices": [
+          { "text": "Interagisci con l'interfaccia", "dest": 15 }
+        ]
+      },
+      {
+        "id": 15,
+        "story": "L'interfaccia rivela due possibili indizi: la sezione 'News' e la sezione 'Report'. Devi scegliere dove cercare.",
+        "image": "img/scifi15.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale tag HTML viene usato per enfatizzare un testo?",
+        "correctAnswer": "<strong>",
+        "choices": [
+          { "text": "Vai alla sezione News", "dest": 16 },
+          { "text": "Vai alla sezione Report", "dest": 17 }
+        ]
+      },
+      {
+        "id": 16,
+        "story": "Nella sezione News, leggi un articolo criptico che descrive un problema di layout critico nella base. Devi analizzare l'articolo per trovare il prossimo indizio.",
+        "image": "img/scifi16.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale proprietà CSS viene usata per impostare il margine esterno di un elemento?",
+        "correctAnswer": "margin",
+        "choices": [
+          { "text": "Analizza l'articolo", "dest": 18 }
+        ]
+      },
+      {
+        "id": 17,
+        "story": "Nella sezione Report, trovi un documento che riporta un errore di formattazione nelle pagine web della base. Questo potrebbe essere l'indizio che cercavi.",
+        "image": "img/scifi17.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale tag HTML definisce un paragrafo?",
+        "correctAnswer": "<p>",
+        "choices": [
+          { "text": "Esamina il report", "dest": 18 }
+        ]
+      },
+      {
+        "id": 18,
+        "story": "Il documento rivela l'ubicazione di una stanza segreta contenente il Codice Perduto. Devi dirigerti verso il laboratorio centrale.",
+        "image": "img/scifi18.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale proprietà CSS viene usata per impostare il bordo di un elemento?",
+        "correctAnswer": "border",
+        "choices": [
+          { "text": "Dirigiti al laboratorio centrale", "dest": 19 }
+        ]
+      },
+      {
+        "id": 19,
+        "story": "Arrivi al laboratorio centrale, un ambiente futuristico con pannelli olografici e schermi fluttuanti. Qui devi identificare il tag per dividere il contenuto.",
+        "image": "img/scifi19.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale tag HTML viene usato per definire una divisione o sezione in una pagina?",
+        "correctAnswer": "<div>",
+        "choices": [
+          { "text": "Interagisci con il laboratorio", "dest": 20 }
+        ]
+      },
+      {
+        "id": 20,
+        "story": "Il laboratorio mostra una grande mappa olografica che evidenzia la posizione del Codice Perduto. Tuttavia, il sistema è protetto da un enigma critico.",
+        "image": "img/scifi20.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale proprietà CSS viene usata per impostare la dimensione del carattere?",
+        "correctAnswer": "font-size",
+        "choices": [
+          { "text": "Risolvi l'enigma e prendi il codice", "dest": 21 }
+        ]
+      },
+      {
+        "id": 21,
+        "story": "Missione compiuta! Hai recuperato il Codice Perduto e sbloccato il segreto della stazione spaziale. La Federazione celebra il tuo ingegno e la tua abilità nel decifrare i codici. Il futuro dell'umanità è salvo.",
+        "image": "img/scifi21.jpg",
+        "puzzleEnabled": false,
+        "puzzleText": "",
+        "correctAnswer": "",
+        "choices": []
+      }
+    ]
+  }
+  
