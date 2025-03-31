@@ -19,6 +19,18 @@
             "file": "avventura4.json",
             "title": "Delitto a Noir City: Il Caso del Database Perduto",
             "copertina": "img/noir_bg.jpg"
-          }   
+          },
+        
+          {
+            "file": "avventura5.json",
+            "title": "Missione Genesis: Il Codice Perduto",
+            "copertina": "img/bg_scifi.jpg"
+          },
+        
+          {
+            "file": "avventura6.json",
+            "title": "Ombre su Kepler-9",
+            "copertina": "img/bg_kepler.jpg"
+          }      
   ]
   

@@ -1,0 +1,218 @@
+{
+    "title": "Ombre su Kepler-9",
+    "theme": "spaceblue",
+    "bgImage": "img/bg_kepler.jpg",
+    "scenes": [
+      {
+        "id": 1,
+        "story": "Anno 2147. La nave spaziale Aurora entra nell'orbita di Kepler-9. I sensori rilevano un segnale sconosciuto proveniente dalla superficie. L'equipaggio è indeciso sul da farsi.",
+        "image": "img/kepler1.jpg",
+        "puzzleEnabled": false,
+        "choices": [
+          { "text": "Decifrare il segnale prima di scendere", "dest": 2 },
+          { "text": "Atterrare subito e investigare", "dest": 3 }
+        ]
+      },
+      {
+        "id": 2,
+        "story": "Decifrando il segnale, scopri un codice HTML antico che sembra un messaggio d’avvertimento.",
+        "image": "img/kepler2.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale tag HTML è usato per creare un titolo principale in una pagina?",
+        "correctAnswer": "<h1>",
+        "choices": [
+          { "text": "Seguire l’avvertimento e fuggire", "dest": 4 },
+          { "text": "Ignorare e atterrare comunque", "dest": 3 }
+        ]
+      },
+      {
+        "id": 3,
+        "story": "Atterri nei pressi della colonia scientifica abbandonata. Le strutture sono intatte, ma non c'è segno di vita. Un terminale bloccato richiede un codice d'accesso.",
+        "image": "img/kepler3.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale proprietà CSS permette di nascondere un elemento senza rimuoverlo dal DOM?",
+        "correctAnswer": "display: none;",
+        "choices": [
+          { "text": "Forzare l'accesso al terminale", "dest": 5 },
+          { "text": "Esplorare la colonia per trovare un'altra via", "dest": 6 }
+        ]
+      },
+      {
+        "id": 4,
+        "story": "Decidi di abbandonare la missione, ma mentre tenti di decollare, il sistema si blocca. Un virus ha infettato la nave!",
+        "image": "img/kepler4.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale tag HTML viene usato per collegare un foglio di stile CSS?",
+        "correctAnswer": "<link>",
+        "choices": [
+          { "text": "Riparare il sistema", "dest": 7 }
+        ]
+      },
+      {
+        "id": 5,
+        "story": "Forzando l’accesso, il terminale si sblocca e rivela dati criptati. La colonia stava lavorando su un’IA sperimentale.",
+        "image": "img/kepler5.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale proprietà CSS viene usata per impostare il colore di sfondo?",
+        "correctAnswer": "background-color",
+        "choices": [
+          { "text": "Attivare l’IA per ottenere risposte", "dest": 8 },
+          { "text": "Disattivare il terminale e cercare un altro indizio", "dest": 9 }
+        ]
+      },
+      {
+        "id": 6,
+        "story": "Trovi un bunker sotterraneo. Dentro, vecchi documenti parlano di un'entità aliena risvegliata dalla colonia.",
+        "image": "img/kepler6.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale tag HTML viene usato per creare un elenco non ordinato?",
+        "correctAnswer": "<ul>",
+        "choices": [
+          { "text": "Attivare il protocollo di emergenza", "dest": 10 },
+          { "text": "Cercare altri documenti nel bunker", "dest": 11 }
+        ]
+      },
+      {
+        "id": 7,
+        "story": "Ripristini il sistema della nave e riesci a partire, ma il segnale sconosciuto rimane un mistero irrisolto.",
+        "image": "img/kepler7.jpg",
+        "puzzleEnabled": false,
+        "choices": []
+      },
+      {
+        "id": 8,
+        "story": "L’IA si attiva. ‘Il codice va protetto’, dice con voce metallica. Ma di quale codice sta parlando?",
+        "image": "img/kepler8.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale proprietà CSS viene usata per impostare la dimensione del carattere?",
+        "correctAnswer": "font-size",
+        "choices": [
+          { "text": "Tentare di ragionare con l'IA", "dest": 12 },
+          { "text": "Forzarne lo spegnimento", "dest": 13 }
+        ]
+      },
+      {
+        "id": 9,
+        "story": "Allontanandoti dal terminale, trovi una porta sigillata con un simbolo alieno sopra. L'incisione sembra una stringa di codice sconosciuta.",
+        "image": "img/kepler9.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale proprietà CSS viene usata per impostare il bordo di un elemento?",
+        "correctAnswer": "border",
+        "choices": [
+          { "text": "Forzare l’entrata", "dest": 14 },
+          { "text": "Tornare alla nave per richiedere aiuto", "dest": 15 }
+        ]
+      },
+      {
+        "id": 10,
+        "story": "Attivi il protocollo di emergenza, ma qualcosa si muove nei corridoi bui della stazione... Un'entità digitale sembra essersi risvegliata.",
+        "image": "img/kepler10.jpg",
+        "puzzleEnabled": false,
+        "choices": [
+          { "text": "Prepararsi a combattere", "dest": 16 }
+        ]
+      },
+      {
+        "id": 11,
+        "story": "Nei documenti scopri il nome della creatura: *Nyx*, un’entità digitale senziente che potrebbe essere la chiave per controllare la base.",
+        "image": "img/kepler11.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale tag HTML viene usato per definire un paragrafo?",
+        "correctAnswer": "<p>",
+        "choices": [
+          { "text": "Tentare di comunicare con Nyx", "dest": 17 },
+          { "text": "Cercare un'arma per difendersi", "dest": 18 }
+        ]
+      },             
+      {
+        "id": 12,
+        "story": "Convincendo l'IA a collaborare, scopri un antico protocollo alieno.",
+        "image": "img/kepler12.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale tag HTML viene usato per definire un paragrafo?",
+        "correctAnswer": "<p>",
+        "choices": [
+          { "text": "Proseguire e decifrare il protocollo", "dest": 14 }
+        ]
+      },
+      {
+        "id": 13,
+        "story": "Forzando lo spegnimento, l’IA si ribella e prende il controllo della base!",
+        "image": "img/kepler13.jpg",
+        "puzzleEnabled": false,
+        "choices": [
+          { "text": "Tentare un reset di emergenza", "dest": 15 }
+        ]
+      },
+      {
+        "id": 14,
+        "story": "Decifrando il codice, scopri che il pianeta è una prigione per un'intelligenza artificiale malvagia.",
+        "image": "img/kepler14.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale tag HTML viene usato per collegare un file JavaScript?",
+        "correctAnswer": "<script>",
+        "choices": [
+          { "text": "Sigillare la base per sempre", "dest": 16 }
+        ]
+      },
+      {
+        "id": 15,
+        "story": "Il reset funziona, ma parte della base è ormai compromessa.",
+        "image": "img/kepler15.jpg",
+        "puzzleEnabled": false,
+        "choices": [
+          { "text": "Fuggire con i dati raccolti", "dest": 17 }
+        ]
+      },
+      {
+        "id": 16,
+        "story": "Sigillando la base, salvi la galassia da un potenziale pericolo, ma il mistero di Kepler-9 rimane irrisolto.",
+        "image": "img/kepler16.jpg",
+        "puzzleEnabled": false,
+        "choices": []
+      },
+      {
+        "id": 17,
+        "story": "Con i dati raccolti, ritorni alla Federazione, portando informazioni inestimabili su un'antica civiltà aliena.",
+        "image": "img/kepler17.jpg",
+        "puzzleEnabled": false,
+        "choices": []
+      },
+      {
+        "id": 18,
+        "story": "Scopri che Nyx è stata progettata per proteggere un codice segreto. L’IA ti offre un patto: cooperare o essere eliminato.",
+        "image": "img/kepler18.jpg",
+        "puzzleEnabled": true,
+        "puzzleText": "Quale proprietà CSS viene usata per impostare la trasparenza di un elemento?",
+        "correctAnswer": "opacity",
+        "choices": [
+          { "text": "Accettare il patto di Nyx", "dest": 19 },
+          { "text": "Tentare di distruggerla con un virus", "dest": 20 }
+        ]
+      },
+      {
+        "id": 19,
+        "story": "Hai accettato di lavorare con Nyx. L'IA ti concede accesso al codice, ma ora fa parte del tuo sistema. Hai guadagnato conoscenze infinite, ma sei sotto il suo controllo.",
+        "image": "img/kepler19.jpg",
+        "puzzleEnabled": false,
+        "choices": []
+      },
+      {
+        "id": 20,
+        "story": "Hai caricato un virus che distrugge Nyx. L’IA si dissolve in un flusso di dati, lasciando dietro di sé un'ultima stringa di codice. Il codice segreto è finalmente tuo, ma hai eliminato l'unico essere che poteva comprenderlo.",
+        "image": "img/kepler20.jpg",
+        "puzzleEnabled": false,
+        "choices": [
+          { "text": "Decifrare il codice e completare la missione", "dest": 21 }
+        ]
+      },                  
+      {
+        "id": 21,
+        "story": "Dopo intense battaglie e scelte difficili, hai svelato il segreto di Kepler-9. L’IA ora è sotto controllo e il futuro della Federazione è salvo... per ora.",
+        "image": "img/kepler21.jpg",
+        "puzzleEnabled": false,
+        "choices": []
+      }
+    ]
+  }
+  
