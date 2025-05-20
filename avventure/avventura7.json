@@ -1,0 +1,239 @@
+{
+  "title": "OMEGA TEAM LA VENDETTA DELLA SIGNORA MARIA",
+  "bgImage": "img/omega/bg_signora.webp",
+  "theme": "blue",
+  "scenes": [
+    {
+      "id": 1,
+      "story": "ESTERNO. siete fuori dal laboratorio  il perimetro è elettrificato dovete entrare.",
+      "image": "img/omega/1 esterno.webp",
+      "puzzleEnabled": true,
+      "puzzleText": "cosa significa il valore del RHO ?",
+      "correctAnswer": "resistività",
+      "choices": [
+        {
+          "text": "avanti",
+          "dest": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "story": "VEICOLO. superata la recinzione avete trovato un veicolo abbandonato alcuni oggetti vi serviranno per affrontare le guardie ",
+      "image": "img/omega/2 veicolo.webp",
+      "puzzleEnabled": true,
+      "puzzleText": "l'impianto civile quanti circuiti ha ?",
+      "correctAnswer": "3",
+      "choices": [
+        {
+          "text": "avanti",
+          "dest": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "story": "ENTRATI. siete entrati nel laboratorio ora dovete trovare l'ascensore per i settori degli esperimenti .... attenti",
+      "image": "img/omega/3 ENTRATI.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "interruttore, deviatore , invertitore cosa sono?",
+      "correctAnswer": "organi di comando",
+      "choices": [
+        {
+          "text": "avanti",
+          "dest": 4
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "story": "GUARDIE.nell'auto avete trovato degli oggetti che vi hanno permesso di creare delle armi,scegli quella giusta e agisci in silenzio",
+      "image": "img/omega/4 guardie.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "(x-6) * (x+6) calcola il risultato",
+      "correctAnswer": "x^2-36",
+      "choices": [
+        {
+          "text": "bastone TASER",
+          "dest": 5
+        },
+        {
+          "text": "FLASHBOMB",
+          "dest": 6
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "story": "NINJA.guardie superate trovate l'ascensore ",
+      "image": "img/omega/5 ninja.png",
+      "puzzleEnabled": true,
+      "puzzleText": "cosa significa dielettrico",
+      "correctAnswer": "isolante",
+      "choices": [
+        {
+          "text": "avanti",
+          "dest": 7
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "story": "CATTURATI: la bomba ha funzionato ma troppo rumorosa ora dovete  cercare di scappare ",
+      "image": "img/omega/6 catturati.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "V ; I ; OHM cosa indicano?",
+      "correctAnswer": "tensione corrente resistenza",
+      "choices": [
+        {
+          "text": "Nuova scelta",
+          "dest": 8
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "story": "RICERCA ASCENSORE ",
+      "image": "img/omega/7 RICERCA ASCENSORE.png",
+      "puzzleEnabled": true,
+      "puzzleText": "qual'è lo strato intermedio semifuso della terra?",
+      "correctAnswer": "mantello",
+      "choices": [
+        {
+          "text": "sinistra",
+          "dest": 9
+        },
+        {
+          "text": "destra",
+          "dest": 10
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "story": "LIBERI.ORA CONTINUA LA RICERCA",
+      "image": "img/omega/8 liberi.png",
+      "puzzleEnabled": true,
+      "puzzleText": "se si alza la temperatura in un conduttore cosa farà la resistenza?",
+      "correctAnswer": "aumenta",
+      "choices": [
+        {
+          "text": "avanti",
+          "dest": 7
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "story": "ASCENSORE. Ottimo ora dovete trovare il piano giusto e siete arrivati attenzione alle guardie che vi stanno braccando",
+      "image": "img/omega/9 ASCENSORE.png",
+      "puzzleEnabled": true,
+      "puzzleText": "quale tipo di margine tettonico crea una nuova litosfera?",
+      "correctAnswer": "margine divergente",
+      "choices": [
+        {
+          "text": "PIANO -3",
+          "dest": 10
+        },
+        {
+          "text": "PIANO -7",
+          "dest": 11
+        },
+        {
+          "text": "PIANO -5",
+          "dest": 10
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "story": "CATTURATI . fine missione ",
+      "image": "img/omega/10 CATTURATI THE END.png",
+      "puzzleEnabled": false
+    },
+    {
+      "id": 11,
+      "story": "INFERNO. benvenuti al laboratorio segreto prendete un campione e scappate velocemente",
+      "image": "img/omega/11 PIANO -7 INFERNO.jpg",
+      "puzzleEnabled": true,
+      "puzzleText": "i conduttori di colore blu-azzurro cosa indicano ?",
+      "correctAnswer": "neutro",
+      "choices": [
+        {
+          "text": "avanti",
+          "dest": 12
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "story": "VIRUS. avete superato le difese interne e preso il campione ora dovete uscire ma senza essere visti",
+      "image": "img/omega/12 TROVATO IL VIRUS.png",
+      "puzzleEnabled": true,
+      "puzzleText": "il colore nero-marrone-grigio dei conduttori cosa indica?",
+      "correctAnswer": "fase",
+      "choices": [
+        {
+          "text": "circuito aereazione",
+          "dest": 13
+        },
+        {
+          "text": "tunnel rifornimenti",
+          "dest": 10
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "story": "USCITI. siete fuori ma non è finita . raggiugete il punto di estrazione ",
+      "image": "img/omega/13 usciti.png",
+      "puzzleEnabled": true,
+      "puzzleText": "la potenza elettrica  come si calcola?",
+      "correctAnswer": "v*i",
+      "choices": [
+        {
+          "text": "sinistra forza",
+          "dest": 10
+        },
+        {
+          "text": "destra tecnica ",
+          "dest": 14
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "story": "INSEGUITI . state per arrivare al punto di estrazione ma siete inseguiti dai militari e dai droni di sicurezza ... create un diversivo",
+      "image": "img/omega/14 INSEGUITI.png",
+      "puzzleEnabled": true,
+      "puzzleText": "1KW ( kilowatt) a quanti W ( watt) corrisponde?",
+      "correctAnswer": "1000",
+      "choices": [
+        {
+          "text": "avanti",
+          "dest": 15
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "story": "ARRIVANO I NOSTRI . il diversivo ha funzionato ed ora l'elicottero può portarvi in salvo dopo un ultimo sforzo",
+      "image": "img/omega/15 ARRIVANO I NOSTRI.png",
+      "puzzleEnabled": true,
+      "puzzleText": "se collego una scatola sul pannello o sul muro con una sola vite cosa succede alla signora maria?",
+      "correctAnswer": "si cappotta",
+      "choices": [
+        {
+          "text": "si torna a casa",
+          "dest": 16
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "story": "VITTORIA complimenti missione compiuta .....",
+      "image": "img/omega/16 missione compiuta.jpg",
+      "puzzleEnabled": false
+    }
+  ]
+}

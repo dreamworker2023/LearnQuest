@@ -31,6 +31,11 @@
             "file": "avventura6.json",
             "title": "Ombre su Kepler-9",
             "copertina": "img/bg_kepler.jpg"
-          }      
-  ]
+          },
+      {
+        "file": "avventura7.json",
+        "title": "Omega Team: La vendetta della signora Maria",
+        "copertina": "img/omega/bg_signora.webp"
+      }  
+    ]
   
